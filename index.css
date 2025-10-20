@@ -7,13 +7,14 @@ header {
   padding-top: 35px;
   display: flex;
 }
+
 #list-header > li {
   display: inline-block;
   color: white;
   list-style: none;
   font-family: Istok Web, sans-serif;
   font-style: Regular;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 #list-header {
@@ -24,7 +25,7 @@ header {
 #first-page {
   background-image: url("/images/background.jpg");
   margin: 0px;
-  height: 1000px;
+  height:800px;
 }
 
 .block {
@@ -32,7 +33,7 @@ header {
 }
 
 #cable {
-    margin-left: 110px;
+    margin-left: 278px;
 }
 
 body {
@@ -44,16 +45,38 @@ body {
   width: 400px;
   height: auto;
   margin-top: 175px;
-  margin-left: 160px;
+  margin-left: 150px;
 }
-
 #phone {
-  width: 500px;
-  height: auto;
-  margin-left: 100px;
-  margin-top: 100px;
+  margin-left: 300px;
+  margin-top: 10px;
 }
 
 .phone {
+  width: 300px;
+  height: auto;
   border-radius: 50px;
+}
+
+#desription {
+  color: white;
+  font-family: Istok Web, sans-serif;
+  padding-left: 150px;
+  padding-top: 125px;
+}
+
+.left-part {
+  display: inline-block;
+}
+
+#second-page {
+  background-color: #D53005;
+  margin: 0px;
+}
+
+.music-text {
+  margin: 0px;
+  padding: 0px;
+  font-family: Karia, sans-serif;
+  font-style: Regular;
 }
