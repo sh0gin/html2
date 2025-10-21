@@ -1,39 +1,53 @@
+@import "fonts.css";
+
 header {
   background-image: url("/images/background.jpg");
 }
 
 #header {
-  padding-left: 100px;
   padding-top: 35px;
   display: flex;
 }
 
-#list-header > li {
+
+.logo-main {
+  margin-left: 122px;
+}
+
+#list-header>li {
   display: inline-block;
   color: white;
   list-style: none;
   font-family: Istok Web, sans-serif;
-  font-style: Regular;
   margin-left: 100px;
+  font-size: 18px;
+}
+
+#list-header>li:first-child {
+  margin-left: 0;
 }
 
 #list-header {
-  margin: 0px;
+  border: none;
+
+  margin-left: 190px;
   margin-top: 30px;
 }
 
 #first-page {
   background-image: url("/images/background.jpg");
+  background-size: contain;
+
   margin: 0px;
-  height:800px;
+
 }
 
 .block {
-    display: flex; 
+  display: flex;
 }
 
 #cable {
-    margin-left: 278px;
+  margin-left: 374px;
 }
 
 body {
@@ -47,9 +61,10 @@ body {
   margin-top: 175px;
   margin-left: 150px;
 }
+
 #phone {
-  margin-left: 300px;
-  margin-top: 10px;
+  margin-left: 394px;
+  margin-top: 40px;
 }
 
 .phone {
@@ -60,7 +75,7 @@ body {
 
 #desription {
   color: white;
-  font-family: Istok Web, sans-serif;
+  font-family: "Istok Web", sans-serif;
   padding-left: 150px;
   padding-top: 125px;
 }
@@ -70,13 +85,251 @@ body {
 }
 
 #second-page {
+  position: relative;
   background-color: #D53005;
   margin: 0px;
+  position: relative;
+  height: 1080px;
 }
 
-.music-text {
-  margin: 0px;
-  padding: 0px;
-  font-family: Karia, sans-serif;
+.h2 {
+  position: absolute;
+  top: 83px;
+  left: 122px;
+  font-family: "Karla", sans-serif;
   font-style: Regular;
+  font-weight: 400;
+  color: white;
+  /* margin: 83px 0px 0px 122px; */
+  /* font-family: Karia, sans-serif; */
+}
+
+.second__page-main {
+  inset: 0;
+  position: absolute;
+  top: 179px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hand {
+  margin-left: auto;
+
+}
+
+.hand img {
+  width: 800px;
+  height: auto;
+}
+
+.button__second-page {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-left: 122px;
+  margin-bottom: 120px;
+}
+
+.button__second-page>button {
+  border: 1px solid #B13E18;
+
+  height: 83px;
+  width: 382px;
+  background: linear-gradient(to right, #B13E18, #F3501A);
+  font-style: Regular;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+#third-page {
+  position: relative;
+  background-image: linear-gradient(rgb(213 48 5) 0% 1%, rgb(0 0 0) 5%);
+  height: 1024px;
+  font-family: Karla, sans-serif;
+  color: white;
+  font-size: 30px;
+  font-style: Regular;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.about-page,
+.description {
+  font-family: Karla, sans-serif;
+  color: white;
+  font-size: 30px;
+  font-style: Regular;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.about-page {
+  position: absolute;
+  top: 83px;
+  left: 122px;
+}
+
+.description {
+  position: absolute;
+  left: 275px;
+  top: 476px;
+  width: 996px;
+}
+
+#fourty-page {
+  position: relative;
+  background-color: #D53005;
+  min-height: 1024px;
+  /* border: none; */
+}
+
+.store-page-title {
+  top: 83px;
+  left: 122px;
+  position: absolute;
+  font-family: Karla, sans-serif;
+  color: white;
+  font-size: 30px;
+  font-style: Regular;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.forty-page-buttom {
+  min-height: 50px;
+  max-width: 240px;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat;
+  min-width: 240px;
+}
+
+.forty-page-buttom-black {
+  color: white;
+  background-color: black;
+}
+
+.download-mac {
+  display: block;
+  margin-left: 68px;
+  box-sizing: border-box;
+  align-self: start;
+  max-width: 100px;
+}
+
+.forty-page-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.forty-layout {
+  display: flex;
+  flex-direction: column;
+  padding-top: 259px;
+  /* align-items: center; */
+}
+
+.macbook-image {
+  padding-top: 175px;
+  padding-right: 45px;
+}
+
+.forty-layout>h3 {
+  /* align-items: center; */
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-top: 135px;
+  padding-left: 25px;
+  font-size: 21px;
+}
+
+.forty-layout>p {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding-left: 18px;
+}
+
+.fourth-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-left: 110px;
+}
+
+.old__version-mplayer {
+  color: black;
+  text-decoration: underline;
+}
+
+.down-macbook-image {
+  position: relative;
+  top: -13px;
+  left: 336px;
+}
+
+
+footer {
+  background-image: linear-gradient(#D53005 0% 5%, #000000 10%);
+  color: white;
+  font-family: Montserrat;
+  font-weight: Regular;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer>.footer>.first-list-footer>ul {
+  margin: 0px;
+  list-style: none;
+}
+
+footer>.footer>.first-list-footer>ul>li {
+  margin-bottom: 25px;
+}
+
+.first-list-footer {
+  display: flex;
+  gap: 147px;
+  margin-right: 62px;
+}
+
+.mini-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-company {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.first-list-footer {
+  margin-top: 120px;
+  display: flex;
+  justify-content: end;
+}
+
+.footer-logo {
+  margin-left: 110px;
+  width: 138px;
+  height: auto;
+}
+
+.info-company {
+  margin-top: 15px;
+  margin-left: 110px;
+  margin-bottom: 74px;
+  display: flex;
+  gap: 99px;
 }

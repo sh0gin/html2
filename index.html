@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <!-- https://www.figma.com/file/xwvUXpkFR8vSdAN27iafbM/Untitled?node-id=0%3A1&t=cmEQXS5oA4sh621J-1 -->
   </head>
   <body>
     <header>
       <div id="header">
-        <img src="images/logo.png" alt="logo" />
+        <img class="logo-main" src="images/logo.png" alt="logo" />
         <ul id="list-header">
           <li>HOME</li>
           <li>MUSIC</li>
@@ -45,21 +46,23 @@
       </div>
 
       <div id="second-page">
-        <div >
-          <h2 class="music-text">Music</h2>
+        <div>
+          <h2 class="h2">Music</h2>
         </div>
-        <div class="hand">
-          <img src="images/hand.png" alt="cabel" />
-        </div>
-        <div class="button">
-          <button>Listen now</button>
-          <button>Find a song...</button>
+        <div class="second__page-main">
+          <div class="button__second-page">
+            <button>Listen now</button>
+            <button>Find a song...</button>
+          </div>
+          <div class="hand">
+            <img src="images/hand.png" alt="cabel" />
+          </div>
         </div>
       </div>
 
       <div id="third-page"> 
-        <h2>About</h2>
-        <p>
+        <h2 class="about-page">About</h2>
+        <p class="description">
           MusicPlayer gives you instant access to millions of songs – from old
           favorites to the latest hits. Just hit play to stream anything you
           like.
@@ -67,45 +70,64 @@
       </div>
 
       <div id="fourty-page">
-        <h2>Store</h2>
-        <button>Download Windows x64</button>
-        <button>Download MacOS</button>
-
-        <img src="images/laptop.png" alt="laptop" />
-        <h3>Нужна предыдущая версия MPlayer?</h3>
-        <p>
-          Вы можете скачать одну из предыдущих версий MPlayer, которая
-          совместима с нужной вам версией операционной системы и определёнными
-          устройствами. Выберите предыдущую версию MPlayer
-        </p>
+        <h2 class="store-page-title">Store</h2>
+        <div class="forty-page-layout">
+          <div class="forty-layout">
+            
+            <div class="fourth-btn">
+              <button class="forty-page-buttom forty-page-buttom-black"><span class="download-windows">Download <br> Windows x64</span></button>
+              <button class="forty-page-buttom"><span class="download-mac">Download MacOS</span></button>
+            </div>
+            
+            <h3>Нужна предыдущая версия MPlayer?</h3>
+            <p>
+              Вы можете скачать одну из предыдущих версий MPlayer, которая
+              совместима с нужной вам версией операционной системы и определёнными
+              устройствами. <br><span class="old__version-mplayer">Выберите предыдущую версию MPlayer</span>
+            </p>
+          </div>
+          <div class="macbook-image">
+            
+            <img src="images/top.svg" alt="laptop" />
+          </div>
+        </div>
+        <div class="down-macbook-image">
+          <img src="images/down.svg" alt="laptop" />
+        </div>
       </div>
     </main>
     <footer>
-      <ul>
-        <li>MPlayer</li>
-        <li>Варианты оплаты</li>
-        <li>Состояние заказа</li>
-        <li>Помощь при покупке</li>
-      </ul>
-
-      <ul>
-        <li>Ценности MPlayer</li>
-        <li>Универсальные доступ</li>
-        <li>Окружающая среда</li>
-        <li>Конфиденциальность</li>
-      </ul>
-
-      <ul>
-        <li>Учетная запись</li>
-        <li>Управление ваши MPlayerId</li>
-        <li>Учетная зпись MPlayer Store</li>
-      </ul>
-
-      <img src="image/logo-text.png" alt="logo-text" />
-      <span>© MPlayer Inc., 2022г. Все права защищены.</span>
-      <span>Условия использования</span>
-      <span>Продаже и возврат</span>
-      <span>Юридическая информация</span>
+      <div class="footer">
+        <div class="first-list-footer">
+          <ul>
+            <li class="mini-title">MPlayer</li>
+            <li>Варианты оплаты</li>
+            <li>Состояние заказа</li>
+            <li>Помощь при покупке</li>
+          </ul>
+    
+          <ul>
+            <li class="mini-title">Ценности MPlayer</li>
+            <li>Универсальные доступ</li>
+            <li>Окружающая среда</li>
+            <li>Конфиденциальность</li>
+          </ul>
+    
+          <ul>
+            <li class="mini-title">Учетная запись</li>
+            <li>Управление ваши MPlayerId</li>
+            <li>Учетная зпись MPlayer Store</li>
+          </ul>
+        </div>
+  
+        <img class='footer-logo' src="images/logo-text.png" alt="logo-text" />
+        <div class="info-company">
+          <span>© MPlayer Inc., 2022г. Все права защищены.</span>
+          <span>Условия использования</span>
+          <span>Продаже и возврат</span>
+          <span>Юридическая информация</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
