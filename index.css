@@ -11,9 +11,11 @@ header {
 
 .logo-main {
   margin-left: 122px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain ;
 }
 
-#second-page,
 #third-page,
 #fourty-page,
 footer {
@@ -35,7 +37,6 @@ footer {
 
 #list-header {
   border: none;
-
   margin-left: 190px;
   margin-top: 30px;
 }
@@ -108,8 +109,6 @@ body {
   height: 1080px;
 }
 
-
-
 .h2 {
   position: absolute;
   top: 83px;
@@ -125,19 +124,20 @@ body {
 .second__page-main {
   inset: 0;
   position: absolute;
-  top: 179px;
+  top: 13vh;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .hand {
-  margin-left: auto;
-  display: none;
+  margin-left: 75px;
+  display: flex;
+  align-content: center;
 }
 
 .hand img {
-  width: 800px;
+  width: 100%;
   height: auto;
 }
 
@@ -153,7 +153,7 @@ body {
   border: 1px solid #B13E18;
 
   height: 83px;
-  width: 382px;
+  width: 27vw;
   background: linear-gradient(to right, #B13E18, #F3501A);
   font-style: Regular;
   font-weight: 400;
@@ -408,6 +408,12 @@ footer>.footer>.first-list-footer>ul>li {
 
 @media (max-width: 780px) {
 
+  .logo-header-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
   #list-header>li {
     margin-left: 30px;
   }
@@ -437,6 +443,21 @@ footer>.footer>.first-list-footer>ul>li {
 
   #list-header {
     padding-left: 0px;
+    margin-left: 30px;
+  }
+
+  .logo-main {
+    margin-left: 50px;
+  }
+
+  #list-header>li {
+    font-size: 15px;
+    margin-left: 35px;
+  }
+
+  #list-header>li:first-child {
+    margin-left: 25px;
+
   }
 
   .block {
@@ -459,6 +480,17 @@ footer>.footer>.first-list-footer>ul>li {
   #desription {
     margin-bottom: 150px;
     padding-top: 0px;
-    /* padding-left: 110px */
+    padding-left: 0;  
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-main {
+    margin-left: 35px;
+  }
+
+  #list-header>li {
+    font-size: 10px;
+    margin-left: 15px;
   }
 }
